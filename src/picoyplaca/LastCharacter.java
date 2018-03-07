@@ -2,7 +2,8 @@ package picoyplaca;
 
 import picoyplaca.Variables;
 
-public class LastCharacter (){
+public class LastCharacter{
+	
 	public static void main (String[] args){
 		String lastCharacter;
 		String string = "licence";
