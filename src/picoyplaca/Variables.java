@@ -1,16 +1,16 @@
 package picoyplaca;
 
 public class Variables {
-
-	String licenceplate, date, lastCharacter;
-	int time;	
 	
-	public String getLicenceplate() {
-		return licenceplate;
+	String licencePlate, date, lastCharacter;
+	int time, mrningPicoStrt = 700 , mrningPicoEnd = 930, aftnPicoStrt = 1630, aftnPicoEnd = 2000;	
+	
+	public String getLicencePlate() {
+		return licencePlate;
 	}
 
-	public void setLicenceplate(String licenceplate) {
-		this.licenceplate = licenceplate;
+	public void setLicenceplate(String licencePlate) {
+		this.licencePlate = licencePlate;
 	}
 
 	public String getDate() {

@@ -2,8 +2,13 @@ package picoyplaca;
 
 public class Character {
 
-	public Character() {
-		// TODO Auto-generated constructor stub
-	}
+	private String licence;
 
+	public Character(String licence) {
+		
+//		String lastCharacter;
+		
+		this.licence = licence.substring(licence.length() - 1);
+		return;
+	}
 }

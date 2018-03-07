@@ -1,10 +1,14 @@
 package picoyplaca;
 
+import java.util.Scanner;
+import 
 public class main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+Scanner scanner = new Scanner(null);
+		System.out.println("Ingrese la placa: ");
+		
+		
 	}
 
 }
