@@ -2,17 +2,10 @@ package picoyplaca;
 
 public class Variables {
 	
-	String licencePlate, date, lastCharacter;
-	int time, mrningPicoStrt = 700 , mrningPicoEnd = 930, aftnPicoStrt = 1630, aftnPicoEnd = 2000;	
+	String  date, lastCharacter;
+	int time;
+	final int mrningPicoStrt = 700 , mrningPicoEnd = 930, aftnPicoStrt = 1630, aftnPicoEnd = 2000;	
 	
-	public String getLicencePlate() {
-		return licencePlate;
-	}
-
-	public void setLicenceplate(String licencePlate) {
-		this.licencePlate = licencePlate;
-	}
-
 	public String getDate() {
 		return date;
 	}
@@ -34,6 +27,6 @@ public class Variables {
 	}
 
 	public void setLastCharacter(String lastCharacter) {
-		this.lastCharacter = lastCharacter;
+		this.lastCharacter = lastCharacter.substring(lastCharacter.length() - 1);;
 	}
 }
