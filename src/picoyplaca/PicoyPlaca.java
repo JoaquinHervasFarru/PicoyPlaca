@@ -8,21 +8,23 @@ public class PicoyPlaca {
 		
 		Variables licence = new Variables();
 		Variables date = new Variables();
-	//	Variables time = new Variables();
+		Variables hour = new Variables();
 		Scanner reader = new Scanner(System.in);
 		String licencePlate, dateDayMonYear ;
+		int time;
 		
 		System.out.println("Por favor ingrese su placa:");
 		licencePlate = reader.next();
 		licence.setLastCharacter(licencePlate);
 		
-		System.out.println("Por favor ingrese la fecha en formato dd/mm/aaaa:");
+		System.out.println("Por favor ingrese la fecha en formato 'dd mm aaaa':");
 		dateDayMonYear = reader.next();
 		date.setDate(dateDayMonYear);
+
+		System.out.println("Por favor ingrese la fecha en formato 'dd mm aaaa':");
+		time = reader.nextInt();
+		hour.setTime(time);
 		
-		
-		System.out.println(licence.getLastCharacter());
-		System.out.println(date.getDate());
 		reader.close();
 	}
 	

@@ -1,24 +1,23 @@
 package picoyplaca;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class GetDay {
 	
-	private String date;
 	
-	public String getDay(String date){
+	public DayOfWeek getDay(String date){
 
+		String dateInput = date;
 		
-		Date toFormat = new Date();
-		DateFormat formated = new SimpleDateFormat("EEE");
-		Calendar.DAY_OF_WEEK
-		Date.parse(date);
-		
-		
-		Date dayDate = formated.format(toFormat);
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MM yyyy");
+	    LocalDate formatted = LocalDate.parse(dateInput, formatter);
+	
+	    DayOfWeek day = formatted.getDayOfWeek();
+	    	        
+	return day ;
+	
 	
 	}
 
