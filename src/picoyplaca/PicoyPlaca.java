@@ -20,11 +20,11 @@ public class PicoyPlaca {
 		licencePlate = reader.next();
 		licence.setLastCharacter(licencePlate);
 		
-//		System.out.println("Por favor ingrese la fecha en formato 'dd mm aaaa':");
-//		dateDayMonYear = reader.next();
-//		date.setDate(dateDayMonYear);
-//		day.getDay(date.getDate());
-//				
+		System.out.println("Por favor ingrese la fecha en formato 'dd mm aaaa':");
+		dateDayMonYear = reader.next();
+		date.setDate(dateDayMonYear);
+		day.getDay("09 01 1990");
+				
 		System.out.println("Por favor ingrese la hora en formato en formato de 24 horas de la forma 'hhmm':");
 		time = reader.nextInt();
 		hour.setTime(time);
