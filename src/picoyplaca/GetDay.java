@@ -9,12 +9,13 @@ public class GetDay {
 
 	public void getDay(String date){
 
+
 		try {
 
 			String dateInput = date;
 			Variables gotDay = new Variables();
 
-			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d MM yyyy");
+			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-d");
 			LocalDate formatted = LocalDate.parse(dateInput, formatter);
 
 			DayOfWeek day = formatted.getDayOfWeek();
@@ -22,9 +23,11 @@ public class GetDay {
 			gotDay.setDay(day);
 
 		} catch (Exception e) {
-		
+
 			System.out.println("error: " + e);
-			
+
+
+
 		}
 	}
 }

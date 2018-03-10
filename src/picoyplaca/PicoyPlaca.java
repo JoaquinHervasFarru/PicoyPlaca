@@ -3,9 +3,11 @@ package picoyplaca;
 import java.util.Scanner;
 
 public class PicoyPlaca {
-	
+
+
 	public static void main(String[] Args) {
-		
+
+
 		Variables licence = new Variables();
 		Variables date = new Variables();
 		Variables hour = new Variables();
@@ -15,34 +17,30 @@ public class PicoyPlaca {
 
 		Scanner reader = new Scanner(System.in);
 		GetDay day = new GetDay();
-		
+
 		System.out.println("Por favor ingrese su placa:");
 		licencePlate = reader.next();
 		licence.setLastCharacter(licencePlate);
-		
-		System.out.println("Por favor ingrese la fecha en formato 'dd mm aaaa':");
-		dateDayMonYear = reader.next();
+
+		System.out.println("Por favor ingrese la fecha en formato 'aaaa-mm-dd':");
+		dateDayMonYear = reader.next().trim();
 		date.setDate(dateDayMonYear);
-		day.getDay("09 01 1990");
-				
+		day.getDay(date.getDate());
+
 		System.out.println("Por favor ingrese la hora en formato en formato de 24 horas de la forma 'hhmm':");
 		time = reader.nextInt();
 		hour.setTime(time);
-		
+
 		reader.close();
-		
+
 		if (hour.getTime() > schedule.mrningPicoEnd && hour.getTime() <hour.aftnPicoStrt) {
-			
+
 			System.out.println("Puede circular sin restricción");
-			
+
 	//	} else {
 
-			
-			
+
+
 		}
-		
-		
-		
 	}
-	
 }
