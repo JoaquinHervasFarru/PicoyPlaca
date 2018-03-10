@@ -2,6 +2,8 @@ package picoyplaca;
 
 public class DateParser {
 
-	public 
-	
+	public DateParser(String date){
+		
+	}
+
 }
