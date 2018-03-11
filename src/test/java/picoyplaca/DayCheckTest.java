@@ -6,26 +6,26 @@ import org.junit.jupiter.api.Test;
 
 public class DayCheckTest {
 	@Test
-	public void shouldGetFalseInDayCheck() {
+	public void shouldGetTrueInDayCheck() {
 		DayCheck dayCheck = new DayCheck(6,"5");
 		Boolean weekdayValue = dayCheck.check();
 
-		assertEquals(weekdayValue, false);
+		assertEquals(weekdayValue, true);
 	}
 
 	@Test
-	public void shouldGetTrueInDayCheckWith9() {
+	public void shouldGetFalseInDayCheckWith9() {
 		DayCheck dayCheck = new DayCheck(5,"9");
 		Boolean weekdayValue = dayCheck.check();
 
-		assertEquals(weekdayValue, true);
+		assertEquals(weekdayValue, false);
 	}	
 
 	@Test
-	public void shouldGetTrueInDayCheckWith0() {
+	public void shouldGetFalseInDayCheckWith0() {
 		DayCheck dayCheck = new DayCheck(5,"0");
 		Boolean weekdayValue = dayCheck.check();
 
-		assertEquals(weekdayValue, true);
+		assertEquals(weekdayValue, false);
 	}	
 }

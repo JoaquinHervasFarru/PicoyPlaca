@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class LastCharacterTest {
-
 	@Test
 	public void shouldGetLastChar() {
 		LastCharacter lastCharacterGetter = new LastCharacter("poi0987");
@@ -14,16 +13,12 @@ public class LastCharacterTest {
 		assertEquals(lastCharacter, "7");
 	}
 
-
-
 	@Test
 	public void exceptionThrownWhenParsingLicencePlate() {
 		LastCharacter lastCharacterGetter = new LastCharacter("158poiu");
-
 		assertThrows(IllegalStateException.class,
 				()->{
 					lastCharacterGetter.get();					
 				});
 	}
-
 }

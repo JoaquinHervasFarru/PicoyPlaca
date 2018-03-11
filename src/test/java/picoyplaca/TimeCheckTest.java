@@ -7,7 +7,7 @@ public class TimeCheckTest {
 
 	@Test
 	public void shouldGetFalseInTimeCheck() {
-		TimeCheck timeCheck = new TimeCheck(1500);
+		TimeCheck timeCheck = new TimeCheck(800);
 		Boolean timeValue = timeCheck.check();
 
 		assertEquals(timeValue, false);
@@ -15,7 +15,7 @@ public class TimeCheckTest {
 
 	@Test
 	public void shouldGetTrueInTimeCheck(){
-		TimeCheck timeCheck = new TimeCheck(800);
+		TimeCheck timeCheck = new TimeCheck(1500);
 		Boolean timeValue = timeCheck.check();
 
 		assertEquals(timeValue, true);
