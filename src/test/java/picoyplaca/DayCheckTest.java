@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class DayCheckTest {
 	@Test
-	public void shouldGetFalse() {
+	public void shouldGetFalseInDayCheck() {
 		DayCheck dayCheck = new DayCheck(6);
 		Boolean weekdayValue = dayCheck.check();
 
@@ -14,11 +14,10 @@ public class DayCheckTest {
 	}
 
 	@Test
-	public void shouldGetTrue() {
+	public void shouldGetTrueInDayCheck() {
 		DayCheck dayCheck = new DayCheck(5);
 		Boolean weekdayValue = dayCheck.check();
 
 		assertEquals(weekdayValue, true);
 	}	
-	
 }

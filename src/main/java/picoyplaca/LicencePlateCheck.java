@@ -1,20 +1,20 @@
 package picoyplaca;
 
-public class DayCheck {
+public class LicencePlateCheck {
 
 	int day;
 	Boolean canCirculate;
-	
-	public DayCheck(int day){
+
+	public LicencePlateCheck(int day){
 
 		this.day = day;
 
 	}
-	
+
 	public boolean check() {
-		
+
 		switch (day) {
-		case 1:
+		case 1 :
 			canCirculate = true;	
 			break;
 		case 2:
@@ -35,5 +35,5 @@ public class DayCheck {
 		}
 
 		return canCirculate;
-	}
+	}		
 }
