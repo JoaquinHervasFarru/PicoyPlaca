@@ -2,7 +2,7 @@ package picoyplaca;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import picoyplaca.LastCharacter;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class LastCharacterTest {
 
@@ -12,14 +12,18 @@ public class LastCharacterTest {
 		String lastCharacter = lastCharacterGetter.get();
 
 		assertEquals(lastCharacter, "7");
-/*				//given
-					String plate = "poi0987";
-
-				//when
-
-
-				//then
-
-*/
 	}
+
+
+
+	@Test
+	public void exceptionThrownWhenParsingLicencePlate() {
+		LastCharacter lastCharacterGetter = new LastCharacter("158poiu");
+
+		assertThrows(IllegalStateException.class,
+				()->{
+					lastCharacterGetter.get();					
+				});
+	}
+
 }

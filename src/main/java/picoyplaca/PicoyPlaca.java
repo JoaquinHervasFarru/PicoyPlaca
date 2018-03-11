@@ -16,7 +16,7 @@ public class PicoyPlaca {
 		int time;
 
 		Scanner reader = new Scanner(System.in);
-		GetDay day = new GetDay();
+	//	WeekdayGetter day = new WeekdayGetter();
 
 		System.out.println("Por favor ingrese su placa:");
 		licencePlate = reader.next();
@@ -25,7 +25,7 @@ public class PicoyPlaca {
 		System.out.println("Por favor ingrese la fecha en formato 'aaaa-mm-dd':");
 		dateDayMonYear = reader.next().trim();
 		date.setDate(dateDayMonYear);
-		day.getDay(date.getDate());
+		//day.getDay(date.getDate());
 
 		System.out.println("Por favor ingrese la hora en formato en formato de 24 horas de la forma 'hhmm':");
 		time = reader.nextInt();
@@ -33,14 +33,5 @@ public class PicoyPlaca {
 
 		reader.close();
 
-		if (hour.getTime() > schedule.mrningPicoEnd && hour.getTime() <hour.aftnPicoStrt) {
-
-			System.out.println("Puede circular sin restricción");
-
-	//	} else {
-
-
-
-		}
-	}
+			}
 }

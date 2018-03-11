@@ -37,7 +37,7 @@ public class Variables {
 
 
 	public void setLastCharacter(String lastCharacter) {
-		this.lastCharacter = lastCharacter.substring(lastCharacter.length() - 1);
+		
 	}
 
 
