@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import java.time.format.DateTimeParseException;
 
-public class WeekdayGetterTest {
+public class WeekdayTest {
 
 	public class LastCharacterTest {
 
