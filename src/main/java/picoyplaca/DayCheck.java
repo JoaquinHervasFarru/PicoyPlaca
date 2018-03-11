@@ -2,15 +2,12 @@ package picoyplaca;
 
 public class DayCheck {
 
-	String lastDigit;
-	int day, time;
+	int day;
 	Boolean canCirculate;
 	
-	public DayCheck(String lastDigit, int day, int time){
+	public DayCheck(int day){
 
-		this.lastDigit = lastDigit;
 		this.day = day;
-		this.time = time;
 
 	}
 	
@@ -18,22 +15,22 @@ public class DayCheck {
 		
 		switch (day) {
 		case 1:
-			canCirculate = false;	
+			canCirculate = true;	
 			break;
 		case 2:
-			canCirculate = false;
+			canCirculate = true;
 			break;
 		case 3:
-			canCirculate = false;
+			canCirculate = true;
 			break;
 		case 4:
-			canCirculate = false;
+			canCirculate = true;
 			break;
 		case 5:
-			canCirculate = false;
+			canCirculate = true;
 			break;
 		default:
-			canCirculate = true;
+			canCirculate = false;
 			break;
 		}
 
