@@ -11,7 +11,6 @@ public class PicoyPlaca {
 		Variables licence = new Variables();
 		Variables date = new Variables();
 		Variables hour = new Variables();
-		Variables schedule = new Variables();
 		String licencePlate, dateDayMonYear ;
 		int time;
 
